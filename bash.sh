@@ -14,7 +14,10 @@ done
 
 sudo dpkg -i *.deb
 sudo apt-get install -f
+
+# Install JumpCloud
 sudo curl --tlsv1.2 --silent --show-error --header 'x-connect-key: 2c035afaf0b3d4bb6672ba85499014f7cf50d739' https://kickstart.jumpcloud.com/Kickstart | sudo bash
+
 # Optionally, you can remove the downloaded packages after installation
 # rm -f *.deb
 
